@@ -1,0 +1,224 @@
+<html>
+   <head>
+      <title>Project</title>
+      <link rel="stylesheet" href="C:\Users\vijay sales\Desktop\Webproject\project.css">
+      </link>
+   <body>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      </head>
+      <body>
+         <div>
+            <img src="C:\Users\vijay sales\Desktop\logo2.JPG" style="width:3%" ></img> 
+            <button class="button button1">Log In</button>
+            <button class="button button1">Help</button>
+         </div>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+         <div class="navbar" >
+            <div class="dropdown">
+               <button class="dropbtn"> About Us
+               <i class="fa fa-caret-down"></i>
+               </button>
+            </div>
+            <div class="dropdown">
+               <button class="dropbtn"> Projects
+               <i class="fa fa-caret-down"></i>
+               </button>
+            </div>
+            <div class="dropdown">
+               <button class="dropbtn"> Decor
+               <i class="fa fa-caret-down"></i>
+               </button>
+            </div>
+            <div class="dropdown">
+               <button class="dropbtn"> Furniture
+               <i class="fa fa-caret-down"></i>
+               </button>
+            </div>
+            <div class="dropdown">
+               <button class="dropbtn"> Home
+               <i class="fa fa-caret-down"></i>
+               </button>
+            </div>
+         </div>
+         </div>
+         </div>
+         <div class="slideshow-container">
+            <div class="mySlides fade">
+               <img src="C:\Users\vijay sales\Documents\WEBPHOTOS\furn3.jpg" " style="width:100%;" height="700">
+               <div class="text"></div>
+               <div class="text-block">
+                  <h2><b>"Furnishing your home with modern design and nostalgic excellency."</b></h2>
+               </div>
+            </div>
+            <div class="mySlides fade">
+               <img src="C:\Users\vijay sales\Documents\WEBPHOTOS\furn1.jpg" " style="width:100%;" height="700">
+               <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+               <img src="C:\Users\vijay sales\Documents\WEBPHOTOS\furn4.jpg" style="width:100%" height="700">
+               <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+               <img src="C:\Users\vijay sales\Documents\WEBPHOTOS\furn2.webp" " style="width:100%;" height="700">
+               <div class="text"></div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div>
+         <br>
+         <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+         </div>
+         <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+         </script>
+         <center>
+            <u>
+               <h1>
+               Who We Are
+            </u>
+            </h2>
+            <br><br>
+            <p>
+            <h3>tagline</h3>
+            </p>
+            <p class="p3">Our enterprise was launched for the people to explore & experience every kinds
+               of furniture to get a wonderful  comfort through the use of durable furniture as our main
+               motive is "COMFORT AND LUXURY LIES AT OUR OWN PLACE..."!use of good quality wood is our 
+               speciality of our  wooden furniture  . we demonstrate resourcefullness in face of scarcity.
+               we have unique business models and ground breaking ideas.
+               Here, we believe there is a better way to design your homes with classic touch and modern
+               arts. A more valuable, less invasive way where customers are earned rather than bought. 
+               We are eagerly bringing the newly designed change to your home. We excersice delivery of 
+               optimistic and diverse designs, experiences and points of views to our beloved customers.
+            </p>
+         </center>
+         </div>
+         <br>
+         <hr/>
+         <p>Resize the browser window to see the effect.</p>
+         <div class="container12">
+            <div style="text-align:center">
+               <h2>ABOUT US</h2>
+               <p>TAGLINE**********************:</p>
+            </div>
+            <div class="row">
+               <div class="column">
+                  <img src="C:\Users\vijay sales\Documents\WEBPHOTOS\flowerbg.jpg" style="width:45%">
+               </div>
+               Our enterprise was launched for the people to explore & experience every kinds
+               of furniture to get a wonderful  comfort through the use of durable furniture as our main
+               motive is "COMFORT AND LUXURY LIES AT OUR OWN PLACE..."!use of good quality wood is our 
+               speciality of our  wooden furniture  . we demonstrate resourcefullness in face of scarcity.
+               we have unique business models and ground breaking ideas.
+               Here, we believe there is a better way to design your homes with classic touch and modern
+               arts. A more valuable, less invasive way where customers are earned rather than bought. 
+               We are eagerly bringing the newly designed change to your home. We excersice delivery of 
+               optimistic and diverse designs, experiences and points of views to our beloved customers
+            </div>
+         </div>
+         </div>
+         <hr/>
+         <center>
+            <h2> Our Few Prominent  Highlights</h2>
+         </center>
+         <br>
+         <div>
+            <a class="c" target="abc" href="C:\Users\vijay sales\Desktop\1sofa.jpg">
+            <img src="C:\Users\vijay sales\Desktop\1sofa.jpg" alt="Sofa" style="width:320px" height="250px"> 
+            </a>
+            <a target="abc" href="C:\Users\vijay sales\Documents\WEBPHOTOS\tvunit.jpg.jpg">
+            <img src="C:\Users\vijay sales\Documents\WEBPHOTOS\tvunit.jpg" alt="Sofa" style="width:320px" height="250px"> 
+            </a>
+            <a target="abc" href="C:\Users\vijay sales\Documents\WEBPHOTOS\dinning.jpg.jpg">
+            <img src="C:\Users\vijay sales\Documents\WEBPHOTOS\dinning.jpg" alt="Sofa" style="width:320px" height="250px"> 
+            </a>
+            <a target="abc" href="C:\Users\vijay sales\Documents\WEBPHOTOS\wall.jpg">
+            <img src="C:\Users\vijay sales\Documents\WEBPHOTOS\wall.jpg" alt="Sofa" style="width:320px" height="250px"> 
+            </a>
+            <a target="abc" href="C:\Users\vijay sales\Documents\WEBPHOTOS\pop.jpg">
+            <img src="C:\Users\vijay sales\Documents\WEBPHOTOS\pop.jpg" alt="Sofa" style="width:320px" height="250px"> 
+            </a>
+            <a target="abc" href="C:\Users\vijay sales\Documents\WEBPHOTOS\bed.jpg">
+            <img src="C:\Users\vijay sales\Documents\WEBPHOTOS\bed.jpg" alt="Sofa" style="width:320px" height="250px"> 
+            </a>
+            <a target="abc" href="C:\Users\vijay sales\Documents\WEBPHOTOS\trolley.jpg">
+            <img src="C:\Users\vijay sales\Documents\WEBPHOTOS\trolley.jpg" alt="Sofa" style="width:320px" height="250px"> 
+            </a>
+            <a target="abc" href="C:\Users\vijay sales\Documents\WEBPHOTOS\copboards.jpg">
+            <img src="C:\Users\vijay sales\Documents\WEBPHOTOS\copboards.jpg" alt="Sofa" style="width:320px" height="250px"> 
+            </a>
+         </div>
+         <br><br>
+         <div class="footer">
+            <table style="width:100%">
+               <tr>
+                  <th>head1</th>
+                  <th>Useful Links</th>
+                  <th>head3</th>
+                  <th>Follow Us</th>
+               </tr>
+               <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+               </tr>
+               <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+               </tr>
+               <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+               </tr>
+               <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+               </tr>
+               <tr>
+                  <
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+               </tr>
+            </table>
+         </div>
+   </body>
+</html>
