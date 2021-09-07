@@ -1,0 +1,376 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+ <meta charset="utf-8">
+<link rel="stylesheet" href="C:\Users\vijay sales\Desktop\webdevelopment\bootproject.css"></link>
+</head>
+<body>
+
+
+<div class="header">
+<div class="topnav" id="myTopnav">
+ <img src="C:\Users\vijay sales\Desktop\Webproject\kakade1.PNG" style="width:13%" ></img> 
+  <a href="Helpdesk.html">Helpdesk</a>
+  <a href="AboutUs.html">About Us</a>
+  <a href="Portfolio.html">Portfolio</a>
+  <a href="DecorSection.html">Decor</a>
+  <div class="dropdown">
+    <button class="dropbtn">Furniture
+
+    </button>
+    <div class="dropdown-content">
+      <a href="furniture.html">Living Room</a>
+      <a href="Bedroom.html">Bed Room</a>
+      <a href="kitchen.html">Kitchen</a>
+     
+    </div>
+  </div> 
+  <a href="bootproject.html">Home</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div></div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+<div class="body2">
+<div class="slideshow-container">
+            <div class="mySlides fade">
+               <img src="C:\Users\vijay sales\Desktop\Webproject\livingroom.jpg" " style="width:100%;" height="700">
+               
+            </div>
+            <div class="mySlides fade">
+               <img src="C:\Users\vijay sales\Desktop\Webproject\bed2.jpg" " style="width:100%;" height="700">
+               <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+               <img src="C:\Users\vijay sales\Desktop\Webproject\bed3.jpg" style="width:100%" height="700">
+               <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+               <img src="C:\Users\vijay sales\Desktop\Webproject\office.jpg" " style="width:100%;" height="700">
+               <div class="text"></div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div>
+         <br>
+         <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+         </div>
+         <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+         </script>
+</div>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="body1"><h2><b><center>Our Few Prominent Collections..</center></h2></b>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="C:\Users\vijay sales\Desktop\1sofa.jpg" alt="Sofa" style="width:100%" height="40%">
+      <h3><CENTER>SOFA</center></h3>
+      
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="C:\Users\vijay sales\Desktop\Webproject\tvunit.jpg" alt="tvunit" style="width:100%" height="40%">
+     <h3><CENTER>TV-UNIT</center></h3>
+  
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="C:\Users\vijay sales\Desktop\Webproject\dinning.jpg" alt="dinning" style="width:100%" height="40%">
+      <h3><CENTER>DINNING</center></h3>
+     
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="C:\Users\vijay sales\Desktop\Webproject\wall.jpg" alt="wallpaper" style="width:100%" height="40%">
+      <h3><CENTER>WALLPAPER</center></h3>
+      
+    </div>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="C:\Users\vijay sales\Desktop\Webproject\pop.jpg" alt="POP" style="width:100%" height="40%">
+      <h3><CENTER>POP</center></h3>
+     
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="C:\Users\vijay sales\Desktop\Webproject\bed.jpg" alt="BED" style="width:100%" height="40%">
+     <h3><CENTER>BEDROOM</center></h3>
+     
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="C:\Users\vijay sales\Desktop\Webproject\trolley.jpg" alt="dinning" style="width:100%" height="40%">
+      <h3><CENTER>TROLLEY</center></h3>
+     
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="C:\Users\vijay sales\Desktop\Webproject\copboards.jpg" alt="wallpaper" style="width:100%" height="40%">
+      <h3><CENTER>CUPBOARDS</center></h3>
+     
+    </div>
+  </div>
+</div></div>
+</div>
+</div><br><br>
+
+
+
+
+<h2><center>Short Glance!</center></h2>
+
+<br>
+<div class="fa1 ">
+<div class="row1">
+  <div class="column1">
+    <div class="card1">
+      <p><i class="fa fa-user" style="width:30px"></i></p>
+      <h3>11+</h3>
+      <p>Partners</p>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card1">
+      <p><i class="fa fa-check style="font-size:36px""></i></p>
+      <h3>55+</h3>
+      <p>Projects</p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card1">
+      <p><i class="fas fa-users" ></i></p>
+      <h3>100+</h3>
+      <p>Happy Clients</p>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card1">
+      <p><i class="fa fa-coffee" style="width:100px"></i></p>
+      <h3>100+</h3>
+      <p>Meetings</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<br>
+<h2><b><center>ABOUT US</center></h2></b>
+
+<div class="row11">
+  <div class="column12" style="background-color:white;">
+   
+  </div>
+  <div class="column13" style="background-color:white;">
+<img src="C:\Users\vijay sales\Desktop\Webproject\AboutMain.jpg" alt="wallpaper" style="width:540px" height="420px">
+    
+  </div>
+
+<div class="font1">
+  <div class="column11" style="background-color:white;">
+   <p>Our enterprise was launched for the people to explore & experience every kinds 
+of furniture to get a wonderful comfort through the use of durable furniture as our 
+main motive  is <b>"COMFORT AND LUXURY LIES AT OUR OWN PLACE..."!</b> use of good quality 
+wood is our speciality of our wooden furniture . we demonstrate resourcefullness in
+face of scarcity.we have unique business models and ground breaking ideas. 
+Here, we believe there is a better way to design your homes with classic touch and 
+modern arts. A more valuable,  less invasive way where customers are earned rather than 
+bought.We are eagerly bringing the newly designed change to your home. We excersice 
+delivery ofoptimistic and diverse designs,experiences & points of views to our beloved 
+customers.</p>
+  </div>
+  <div class="column12" style="background-color:white;">
+    </div>
+</p>
+  </div><br>
+
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fas fa-phone-volume"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fas fa-envelope"></i></a>
+<a href="#" class="linkedin"><i class="fab fa-instagram"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-share-alt"></i></a> 
+</div>
+
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center"><b> <i class="fa fa-phone" ></i> CONTACT US</h2>
+    <p class="w3-opacity w3-center">Do you have any questions? </b></p><center>
+<i><p>Please do not hesitate to contact us directly.Our team will come back to you 
+within a matter of Day to help you. </i></p></center>
+
+
+
+        
+    <div class="w3-row w3-padding-32">
+
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Pune,Maharashtra<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +91 6384471476<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: Swarajpk2011@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"> 
+            </div> 
+          </div>
+   <div class="w3-half">
+          <input class="w3-input w3-border" type="text" placeholder="Contact No." required name="Contact"><br>
+      
+</div>
+     
+  <br><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up style="font-size:36px""></i></button>
+<script>
+
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<footer class="container-fluid bg-4 text-center" >
+
+   <div class="content">
+     <div class="left box">
+       <div class="upper">
+         <div class="topic">About us</div>
+         <p>We at <b>"Kakade-Furniture"</b> provides the strength of 
+  excellence in quality, style, selection and quality customer service.</p>
+       </div>
+       <div class="lower">
+ <div class="topic">Contact us</div>
+<div class="phone">
+           <a href="#"><i class="fa fa-map-marker"></i>Katraj-MumbaiPune Bypass Rd,
+           Opposite Of Poddar Inetrnational School,Ambegaon BK,Behind Saurabh,Pune-411046</a>
+         </div>
+         <div class="phone">
+           <a href="#"><i class="fas fa-phone-volume"></i>Phone: +91 6384471476</a>
+         </div>
+         <div class="email">
+           <a href="#"><i class="fas fa-envelope"></i>Swarajpk2011@gmail.com</a>
+         </div>
+
+</div>
+ </div>
+
+     <div class="middle box">
+ <div class="topic">Our Services</div>
+
+       <div><a href="#">Interior Design</a></div>
+       <div><a href="#">Furnishing</a></div>
+       <div><a href="DecorSection.html">Decor</a></div>
+       <div><a href="Portfolio.html">Projects</a></div>
+       <div><a href="AboutUS.html">About Us</a></div>
+     
+     </div>
+     <div class="right box">
+       <div class="topic">Schedule Your Appointment To Visit Us</div>
+       <form action="#">
+         <input type="text" placeholder="Enter email address">
+<center><p><center>OR</p></center>
+        <input type="text" placeholder="EnterPhone Number">
+         <input type="submit" name="" value="Send">
+         <div class="media-icons">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fas fa-phone-volume"></i></a>
+           <a href="#"><i class="fas fa-envelope"></i></a>
+           <a href="#"><i class="fa fa-share-alt"></i></a>
+         </div>
+       </form>
+     </div>
+   </div>
+   <div class="bottom">
+     <p>Copyright © 2020 <a href="#">KakadeFurniture</a> All rights reserved</p>
+   </div>
+ </footer>
+ 
+
+</footer>
+</body>
+</html>
